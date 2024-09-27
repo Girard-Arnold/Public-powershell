@@ -17,9 +17,9 @@ Show-Menu –Title 'Ajout d''un poste dans le domaine'
  {
      '1' {
             ECHO write-host "Veuillez entrer vos identifiants"
-            Add-Computer -DomainName "Societe.int" -OUPath "OU=DESKTOPS,OU=Computers,OU=Societe,DC=Societe,DC=int"
+            Add-Computer -DomainName "forwardis.int" -OUPath "OU=DESKTOPS,OU=Computers,OU=Forwardis,DC=forwardis,DC=int"
      } '2' {
-            Add-Computer -DomainName "Societe.int" -OUPath "OU=LAPTOPS,OU=Computers,OU=Societe,DC=Societe,DC=int"
+            Add-Computer -DomainName "forwardis.int" -OUPath "OU=LAPTOPS,OU=Computers,OU=Forwardis,DC=forwardis,DC=int"
      }'q' {
          return
      }
